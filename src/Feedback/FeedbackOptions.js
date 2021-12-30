@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Wrapper, OptionBtn } from './Feedback.styled';
 
-
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
         <Wrapper>
@@ -14,7 +13,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 }
 
 FeedbackOptions.propTypes = {
-    options: PropTypes.array,
+    options: PropTypes.arrayOf(PropTypes.string,),
     onLeaveFeedback: PropTypes.func,
 }
 
