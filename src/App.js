@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import FeedbackOptions from "./Feedback/FeedbackOptions";
-import Statistic from "./Feedback/Statistics"
+import Statistic from "./Feedback/Statistics";
 import Section from "./Feedback/Section";
-import Notification from "./Feedback/Notification"
+import Notification from "./Feedback/Notification";
 
 const options = ['good', 'neutral', 'bad'];
-
 class App extends Component {
     state = {
         good: 0,
@@ -29,7 +28,6 @@ class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-
     const countTotalFeedback = this.countTotalFeedback();
     const countPositiveFeedbackPercentage = this.countPositiveFeedbackPercentage(countTotalFeedback);
     return (
@@ -40,7 +38,6 @@ class App extends Component {
             onLeaveFeedback={this.setValue}
           />
         </Section>
-
         <Section title="Statistic">
           {countTotalFeedback
             ? < Statistic
