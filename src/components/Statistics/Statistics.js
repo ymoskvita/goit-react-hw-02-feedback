@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Wrapper } from './Feedback.styled';
+import { Wrapper } from '../Feedback.styled';
 
 const Statistic = ({ good, neutral, bad, total, positivePercentage}) => {
     return (

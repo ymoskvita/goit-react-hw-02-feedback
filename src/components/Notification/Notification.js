@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { NotificationMsg } from './Feedback.styled';
+import { NotificationMsg } from '../Feedback.styled';
 
 const Notification = ({ message }) => {
     return (

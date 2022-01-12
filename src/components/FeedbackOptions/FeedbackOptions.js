@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Wrapper, OptionBtn } from './Feedback.styled';
+import { Wrapper, OptionBtn } from '../Feedback.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
